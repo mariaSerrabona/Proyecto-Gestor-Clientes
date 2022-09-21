@@ -21,7 +21,6 @@ class Clientes:
         cliente = Cliente(dni, nombre, apellido)
         Clientes.lista.append(cliente)
         return cliente
-
     @staticmethod
     def modificar(dni, nombre, apellido):
         for i, cliente in enumerate(Clientes.lista):
@@ -29,7 +28,6 @@ class Clientes:
                 Clientes.lista[i].nombre = nombre
                 Clientes.lista[i].apellido = apellido
                 return Clientes.lista[i]
-
     @staticmethod
     def borrar(dni):
         for i, cliente in enumerate(Clientes.lista):
